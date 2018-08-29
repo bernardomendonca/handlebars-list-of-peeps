@@ -1,1 +1,2 @@
-# handlebars-list-of-peeps
+# HANDLEBAR JS
+## List of peeps developed with handlebars JS
