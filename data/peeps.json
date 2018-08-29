@@ -1,0 +1,68 @@
+{
+	"characters": [
+	{
+		"id": 0,
+		"name": "John Snow",
+		"shortCode": "john-snow",
+		"food": "lasagna",
+		"location": "The Wall",
+		"info": {
+			"birthday": "1990-04-23",
+			"phone": 9872059051
+		},
+		"bio": "John Snow was an English physician and a leader in the adoption of anesthesia and medical hygiene. He is considered one of the fathers of modern epidemiology, in part because of his work in tracing the source of a cholera outbreak in Soho, London, in 1854. His findings inspired fundamental changes in the water and waste systems of London, which led to similar changes in other cities, and a significant improvement in general public health around the world."
+	},	{
+		"id": 1,
+		"name": "Yoda",
+		"shortCode": "yoda",
+		"food": "ramen",
+		"info": {
+			"birthday": "1920-02-17",
+			"phone": 4919865422
+		},
+		"bio": "Yoda is a fictional character in the Star Wars franchise created by George Lucas, first appearing in the 1980 film The Empire Strikes Back. In the original films, he trains Luke Skywalker to fight against the Galactic Empire. In the prequel films, he serves as the Grand Master of the Jedi Order and as a high-ranking general of Clone Troopers in the Clone Wars. Before his death in Return of the Jedi at the age of 900, Yoda was the oldest living character in the Star Wars franchise in canon, until the introduction of Maz Kanata in The Force Awakens."
+	},	{
+		"id": 2,
+		"name": "Will Smith",
+		"shortCode": "will-smith",
+		"food": "salad",
+		"location": "Bel Air",
+		"info": {
+			"birthday": "1945-12-10",
+			"phone": 4911234565
+		},
+		"bio": "Willard Carroll 'Will' Smith Jr. is an American actor, producer, comedian, rapper and songwriter. In April 2007, Newsweek called him 'the most powerful actor in Hollywood'. Smith has been nominated for five Golden Globe Awards and two Academy Awards, and has won four Grammy Awards."
+	},	{
+		"id": 3,
+		"name": "Ziggy Stardust",
+		"shortCode": "ziggy-stardust",
+		"food": "Pasta",
+		"location": "Mars",
+		"info": {
+			"birthday": "1970-01-01",
+			"phone": 4915701577
+		},
+		"bio": "Ziggy Stardust was an alter ego of David Bowie."
+	},	{
+		"id": 4,
+		"name": "Potato Head",
+		"shortCode": "potato-head",
+		"food": "Chips",
+		"location": "Pixar Cinematic Universe",
+		"info": {
+			"birthday": "1960-11-04",
+			"phone": 4915701598
+		},
+		"bio": "Mr. Potato Head is an American toy consisting of a plastic model of a potato which can be decorated with a variety of plastic parts that can attach to the main body. These parts usually include ears, eyes, shoes, a hat, a nose, and a mouth. The toy was invented and developed by George Lerner in 1949, and first manufactured and distributed by Hasbro in 1952. Mr. Potato Head was the first toy advertised on television and has remained in production since its debut. The toy was originally produced as separate plastic parts with pushpins that could be stuck into a real potato or other vegetable. However, due to complaints regarding rotting vegetables and new government safety regulations, Hasbro began including a plastic potato body within the toy set in 1964."
+	},	{
+		"id": 5,
+		"name": "The Doctor",
+		"shortCode": "the-doctor",
+		"info": {
+			"birthday": "1213-05-10",
+			"phone": 4915701569
+		},
+		"bio": "alias assumed by a centuries-old alien—a Time Lord from the planet Gallifrey—who travels through space and time in the TARDIS, frequently with companions. The transition to each succeeding actor is explained within the show's narrative through the plot device of regeneration, a biological function of the Time Lord race that allows a change of cellular structure and appearance with recovery following a potentially fatal injury."
+	}
+	]
+}

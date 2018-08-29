@@ -1,0 +1,16 @@
+{
+  "name": "handlebars-training",
+  "version": "1.0.0",
+  "description": "handlebars practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bernardo Mendonca",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0"
+  }
+}

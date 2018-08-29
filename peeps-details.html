@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>Getting Handlebars to run</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="page-peeps-details">
+
+<h1>PEEPS DETAILS | DETAILS ABOUT PEEPS</h1>
+<section class="character-list-container"></section>
+
+<script id="character-template" type="text/x-handlebars-template">
+	{{#each characters}}
+	<div class="character list-group-item">
+		<div class="containter">
+			<div class="row">
+				<div class="col-lg-3">
+					<img src="images/{{shortCode}}.jpg">
+				</div>
+			
+				<div class="col-lg-9 character-details">
+					<h2>{{#makeBold}}{{name}}{{/makeBold}}</h2>
+					{{formatName name location}}
+					<p>{{formatPhoneNumber info.phone}}</p>
+					{{#with info}}
+					<p>B'day: {{birthday}}</p>
+					{{/with}}
+					<p><strong>Favie Foodie: </strong>{{food}}</p>
+					{{#if location }}<p><strong>Whereabouts: </strong>{{location}}</p>{{/if}}
+					{{#unless location}}Whereabouts are unknown...{{/unless}}
+					<br>
+					<div class="character-bio-container">
+						<p><strong>Bio: </strong> {{bio}}</p>
+					</div>					
+					<a href="peeps-details.html?id={{id}}" class="btn btn-primary active view-details">Back</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{/each}}
+</script>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="JS/handlebars-v4.0.11.js"></script>
+ <script src="JS/script.js"></script>
+</body>
+</html>

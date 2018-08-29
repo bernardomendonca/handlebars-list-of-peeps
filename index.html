@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>Getting Handlebars to run</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<h1>LIST OF PEEPS</h1>
+<dl class="character-list-container list-group"></dl>
+
+<script id="character-template" type="text/x-handlebars-template">
+	{{#each characters}}
+	<li class="character list-group-item">
+		<div class="containter">
+			<div class="row">
+				<div class="col-lg-4">
+					<img src="images/{{shortCode}}.jpg">
+				</div>
+			
+				<div class="col-lg-8 character-details">
+					<h2>{{#makeBold}}{{name}}{{/makeBold}}</h2>
+					{{formatName name location}}
+					<p>{{formatPhoneNumber info.phone}}</p>
+					{{#with info}}
+					<p>B'day: {{birthday}}</p>
+					{{/with}}
+					<p><strong>Favie Foodie: </strong>{{food}}</p>
+					{{#if location }}<p><strong>Whereabouts: </strong>{{location}}</p>{{/if}}
+					{{#unless location}}Whereabouts are unknown...{{/unless}}
+					<br>
+
+					<p>
+					  <button class="btn btn-primary active" type="button" data-toggle="collapse" data-target="#bio_{{id}}" aria-expanded="false" aria-controls="collapseExample">
+					    View info
+					  </button>
+					</p>
+					<div class="collapse" id="bio_{{id}}">
+					  <div class="card card-body">
+					    {{bio}}
+					  </div>
+					</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</li>
+	{{/each}}
+</script>
+
+
+
+
+<script src="JS/handlebars-v4.0.11.js"></script>
+ <script src="JS/script.js"></script>
+</body>
+</html>
